@@ -34,6 +34,7 @@ PRODUCT_PACKAGES += \
     1and1_de.pb \
     2degrees_nz.pb \
     a1_at.pb \
+    ahamo_jp.pb \
     airtel_in.pb \
     ais_th.pb \
     apt_tw.pb \
