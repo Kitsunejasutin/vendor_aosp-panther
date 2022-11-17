@@ -192,3 +192,7 @@ PRODUCT_PACKAGES += \
 # Disable mobile data in roaming by default.
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
+
+# Include Carrier Runtime Configuration
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/aosp/CarrierSettings/overlay
