@@ -88,6 +88,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 endif
 
+# Google Battery
+TARGET_NOT_SUPPORTS_GOOGLE_BATTERY ?= true
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
@@ -111,10 +114,6 @@ PRODUCT_PACKAGES += \
 # Charger
 PRODUCT_PACKAGES += \
     product_charger_res_images
-
-# Config
-PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
 
 # Repainter integration
 PRODUCT_PACKAGES += \
